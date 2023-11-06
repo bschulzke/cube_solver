@@ -6,19 +6,51 @@ public class Main {
     System.out.println(cube.getState());
 
     cube.up();
-    System.out.println("----Up move----");
+    System.out.println("----UP----");
     System.out.println(cube.getState());
 
     cube.upPrime();
-    System.out.println("----Up prime----");
+    System.out.println("----UP PRIME----");
     System.out.println(cube.getState());
 
     cube.down();
-    System.out.println("----Down move----");
+    System.out.println("----DOWN----");
     System.out.println(cube.getState());
 
     cube.downPrime();
-    System.out.println("----Down prime----");
+    System.out.println("----DOWN PRIME----");
+    System.out.println(cube.getState());
+
+    cube.left();
+    System.out.println("----LEFT----");
+    System.out.println(cube.getState());
+
+    cube.leftPrime();
+    System.out.println("----LEFT PRIME----");
+    System.out.println(cube.getState());
+
+    cube.right();
+    System.out.println("----RIGHT----");
+    System.out.println(cube.getState());
+
+    cube.rightPrime();
+    System.out.println("----RIGHT PRIME----");
+    System.out.println(cube.getState());
+
+    cube.front();
+    System.out.println("----FRONT----");
+    System.out.println(cube.getState());
+
+    cube.frontPrime();
+    System.out.println("----FRONT PRIME-----");
+    System.out.println(cube.getState());
+
+    cube.back();
+    System.out.println("----BACK----");
+    System.out.println(cube.getState());
+
+    cube.backPrime();
+    System.out.println("----BACK PRIME----");
     System.out.println(cube.getState());
   }
 }
