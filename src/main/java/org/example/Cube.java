@@ -21,6 +21,10 @@ public class Cube {
     cubeState[BACK] = "oooo";
   }
 
+  public Cube(String[] state) {
+    cubeState = state;
+  }
+
   public String getState() {
     return "U: " + cubeState[UP] + " || " +
         "D: " + cubeState[DOWN] + "\n" +
@@ -159,7 +163,6 @@ public class Cube {
   }
 
   public void front() {
-    // TODO: Build this
     // [U0U1L3L1 | R2R0D2D3 | L0D0L2D1 | U2R1U3R3 | F2F0F3F1 | B0B1B2B3]
     String[] newState = new String[6];
     newState[UP] = threeOneOnBottom(cubeState[UP], cubeState[LEFT]);
