@@ -34,6 +34,25 @@ public class Cube {
         "B: " + cubeState[BACK];
   }
 
+  public boolean isSolved() {
+    for (String face : cubeState) {
+      if (!isSolved(face)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private boolean isSolved(String face) {
+    char color = face.charAt(0);
+    for (int i = 0; i < face.length(); i++) {
+      if (color != face.charAt(i)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   public void up() {
     // [U2U0U3U1 | D0D1D2D3 | F0F1L2L3 | B0B1R2R3 | R0R1F2F3 | L0L1B2B3]
     upType(false);

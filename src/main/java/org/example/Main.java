@@ -6,5 +6,6 @@ public class Main {
     Cube cube = new Cube();
 
     System.out.println(cube.getState());
+    System.out.println("Cube is solved? " + cube.isSolved());
   }
 }
